@@ -10,5 +10,11 @@ public class AccountTest {
         ca0001.withdraw(-100);
         ca0001.withdraw(50);
 
+        Bond cd1 = new Bond();
+        cd1.balance = 1000;
+        int term = 45;
+        cd1.setTermAndRate(term);
+        for(int i=0; i<=term; i++)
+            cd1.earnInterest();
     }
 }
