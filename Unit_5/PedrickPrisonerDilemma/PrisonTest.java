@@ -12,7 +12,10 @@ public class PrisonTest {
         sally.height = 1.73;
         sally.sentence = 3;
 
-        System.out.println(bob == sally);
+        PrisonersDilemma pd = new PrisonersDilemma();
+        pd.run();
+
+        /*System.out.println(bob == sally);
         sally.name = "Bob";
         sally.height = 2.08;
         sally.sentence = 4;
@@ -44,7 +47,7 @@ public class PrisonTest {
         String s1 = new String("Test");
         String s2 = new String("Test");
         System.out.println(s1);
-        System.out.println(s2);
+        System.out.println(s2);*/
 
     } 
 }
