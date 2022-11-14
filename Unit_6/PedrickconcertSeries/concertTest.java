@@ -2,12 +2,13 @@ package Unit_6.PedrickconcertSeries;
 
 public class concertTest {
     public static void main(String[]args){
-        PedrickConcert Fav = new PedrickConcert();
-        PedrickConcert SecondFav = new PedrickConcert();
+        PedrickConcert nashville = new PedrickConcert("Nashville", "0506", 200000);
+        PedrickConcert atlanta = new PedrickConcert("Atlanta", "0428", 300000);
+        PedrickConcert different = new PedrickConcert("Rhett", "Country", "Tuscaloosa", "0718", 15000);
 
-        Fav.setFields("Swift", "Pop Country", "Nashville", "0506", 10000);
-        SecondFav.setFields("Rhett", "Country", "Tuscaloosa", "0907", 15000);
-        Fav.announcement();
-        SecondFav.announcement();
+        nashville.announcement();
+        atlanta.announcement();
+        different.announcement();
+
     }
 }
